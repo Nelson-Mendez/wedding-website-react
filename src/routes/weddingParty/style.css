@@ -1,0 +1,16 @@
+.card {
+	display: flex;
+	align-items: center;
+}
+
+.party {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weddingParty {
+	padding: 2rem 20px;
+	min-height: 100%;
+	width: 100%;
+}

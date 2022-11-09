@@ -1,0 +1,9 @@
+.home {
+	padding: 2rem 20px;
+	min-height: 100%;
+	width: 100%;
+}
+
+.home h1 {
+	color: black;
+}

@@ -1,0 +1,55 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* height: 56px; */
+	padding: 0;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 50;
+}
+
+.header .socials {
+	padding: 0 0.5rem;
+	color: black;
+}
+
+.header h1 {
+	justify-content: space-around;
+	margin: 0;
+	padding: 0 15px;
+	text-align: center;
+	font-size: 60px;
+	line-height: 56px;
+	font-weight: 400;
+	color: #000;
+}
+
+.header nav {
+	margin: auto;
+	font-size: 100%;
+}
+
+.header nav a {
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 15px;
+	min-width: 50px;
+	text-align: center;
+	background: purple;
+	text-decoration: none;
+	color: white;
+	will-change: background-color;
+}
+
+.header nav a:hover,
+.header nav a:active {
+	background: rgba(128,0,128,0.2);
+}
+
+.header nav a.active {
+	background: rgba(128,0,128,0.6);
+}
