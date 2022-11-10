@@ -1,4 +1,4 @@
-import style from './style.css';
+import './style.css';
 
 const Home = () => (
 	<div className='style.home'>

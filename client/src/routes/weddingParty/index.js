@@ -1,4 +1,4 @@
-import style from './style.css';
+import './style.css';
 import Card from '../../components/partyCard';
 import { data } from './data';
 

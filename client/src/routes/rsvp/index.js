@@ -1,11 +1,11 @@
-import {useEffect, useState} from "react";
-import style from './style.css';
+import { useState } from "react";
+import './style.css';
 
-const RSVP = ({}) => {
+const RSVP = () => {
 
     const [rsvpGroup, setRsvpGroup] = useState([])
     const [formInput, setformInput] = useState('')
-    const [rsvpInfo, setRsvpInfo ] = useState ([])
+    // const [rsvpInfo, setRsvpInfo ] = useState ([])
     const [diet, setDiet] = useState([])
     const [songRequest, setSongRequest] = useState([])
     const [going, setGoing] = useState([])
@@ -74,16 +74,18 @@ const RSVP = ({}) => {
     const sendRSVP = async () => {
         const data = []
 
-        rsvpGroup.map((individual, i) => {
+        console.log("you hit the button")
+
+        rsvpGroup.forEach((individual, i) => {
             data.push({
                 "name": individual,
                 "RSVP": going[i],
                 "dietary": diet[i],
                 "songRequest": songRequest[i]
             })
-        })
-
-        const response = await fetch('http://localhost:8080/rsvp/submit', {
+        })        
+        
+        let response = await fetch('http://localhost:8080/rsvp/submit', {
             method: "PUT",
             mode: "cors",
             headers: {
@@ -92,9 +94,15 @@ const RSVP = ({}) => {
             },
             cache: 'default',
             body: JSON.stringify(data),
-        })
+        })        
+        .catch ( error => console.log(error))
 
-        console.log(data)
+
+        if(response.status === 404) {
+            alert("kurwa mać coś poszło nie tak! Contact Nelson at 647-704-4269 or Jane at 647-858-5774");
+       }
+
+
     }
 
     return (

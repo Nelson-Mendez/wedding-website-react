@@ -4,7 +4,7 @@ var cors = require('cors')
 const bodyParser = require('body-parser')
 
 const app = express()
-const port = 8080
+const PORT = process.env.PORT || 8080
 
 app.use(cors())
 app.use(express.json())
@@ -106,6 +106,6 @@ app.put('/rsvp/submit', (req, res) => {
     });
 })
 
-app.listen(port, () => {
-	console.log("Express backend is running ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+app.listen(PORT, () => {
+	console.log("Express backend is running on port ", PORT, " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 })
