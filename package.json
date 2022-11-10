@@ -2,6 +2,9 @@
   "name": "wedding-website-react",
   "version": "1.0.0",
   "description": "Back-End for the wedding website ft. Node, mySQL, and express",
+  "engines": {
+    "node": "16.13.X"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
