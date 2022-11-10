@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
 
-
+/*
 const db = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
@@ -18,8 +18,8 @@ const db = mysql.createConnection({
     password : 'purplepocahontasapex',
     database : 'rsvpList'
 });
+*/
 
-/*
 const db = mysql.createConnection({
     host     : 'iu51mf0q32fkhfpl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     user     : 'mpzlghpo5gsqloaf',
@@ -27,7 +27,7 @@ const db = mysql.createConnection({
     password : 'qhe88w4b15px5rsf',
     database : 'zh1c5hfnlgc6cvfj'
 });
-*/
+
 
 db.connect( function(err) {
     if (err) throw err
