@@ -1,3 +1,4 @@
+import React from 'react'
 import './style.css';
 import Card from '../../components/partyCard';
 import { data } from './data';
