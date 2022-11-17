@@ -17,6 +17,7 @@ app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./client/build", "index.html"))
 })
 
+/*
 const db = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
@@ -24,18 +25,17 @@ const db = mysql.createConnection({
     password : 'purplepocahontasapex',
     database : 'rsvpList'
 });
+*/
 
 //mysql.createConnection(process.env.JAWSDB_URL);
 
-/*
-const db2 = mysql.createConnection({
+const db = mysql.createConnection({
     host     : 'iu51mf0q32fkhfpl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     user     : 'mpzlghpo5gsqloaf',
     port     : '3306',
     password : 'qhe88w4b15px5rsf',
     database : 'zh1c5hfnlgc6cvfj'
 });
-*/
 
 
 db.connect( function(err) {
