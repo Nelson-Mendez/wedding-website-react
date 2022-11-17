@@ -17,7 +17,7 @@ const RSVP = () => {
             "name": `${formInput}` 
         }
 
-        const response = await fetch('http://localhost:8080/rsvp/list', {
+        const response = await fetch('/api/rsvp/list', {
             method: "POST",
             mode: "cors",
             headers: {
@@ -85,7 +85,7 @@ const RSVP = () => {
             })
         })        
         
-        let response = await fetch('http://localhost:8080/rsvp/submit', {
+        let response = await fetch('/api/rsvp/submit', {
             method: "PUT",
             mode: "cors",
             headers: {

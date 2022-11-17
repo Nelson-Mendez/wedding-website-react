@@ -1,7 +1,9 @@
+require("dotenv").config()
 const express = require('express')
-const mysql = require('mysql2');
-var cors = require('cors')
+const mysql = require('mysql2')
+const cors = require('cors')
 const bodyParser = require('body-parser')
+const path = require('path')
 
 const app = express()
 const PORT = process.env.PORT || 8080
@@ -10,6 +12,10 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.json())
 
+app.use(express.static(path.resolve(__dirname, "./client/build")))
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./client/build", "index.html"))
+})
 
 const db = mysql.createConnection({
     host     : 'localhost',
@@ -17,7 +23,9 @@ const db = mysql.createConnection({
     port     : '3306',
     password : 'purplepocahontasapex',
     database : 'rsvpList'
-}) || mysql.createConnection(process.env.JAWSDB_URL);
+});
+
+//mysql.createConnection(process.env.JAWSDB_URL);
 
 /*
 const db2 = mysql.createConnection({
@@ -36,7 +44,7 @@ db.connect( function(err) {
 })
 
 
-app.post('/rsvp/list', (req, res)=> {
+app.post('/api/rsvp/list', (req, res)=> {
     const { name } = req.body
     db.query(
         `select groupNumber from guestlist where name = '${name}'`,
@@ -84,7 +92,7 @@ app.post('/rsvp/list', (req, res)=> {
     )    
 })
 
-app.put('/rsvp/submit', (req, res) => {
+app.put('/api/rsvp/submit', (req, res) => {
     console.log("rsvp submission attempted!")
     console.log(req.body)
     
