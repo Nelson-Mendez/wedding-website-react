@@ -128,7 +128,7 @@ export const data = [
     name: "Alec Wieczorek",
     title: "Flower Boy",
     image: alec,
-    description: "Alec is Jane's younger and much taller brother. They met at a hospital, of all places, where Jane confidently declared that he was a very good sort and that he could stick around. Jane and Alec love to watch Murder She Wrote and Jeeves & Wooster. They love a good baseball game (cheering for the Jays of course), brunch, being socialites, and retreating to Florida. Alec is so loyal, caring, and protecting of the people he loves. He's the best brother a gal could ask for."
+    description: "Alec is Jane's younger and much taller brother. They met at a hospital, of all places, where Jane confidently declared that he was a very good sort and that he could stick around. Jane and Alec love to watch Murder She Wrote and Jeeves & Wooster. They love a good baseball game (cheering for the Jays of course), brunch, being socialites, and retreating to Florida. Alec is so loyal, caring, and protective of the people he loves. He's the best brother a gal could ask for."
   },
   {
     id: 16,

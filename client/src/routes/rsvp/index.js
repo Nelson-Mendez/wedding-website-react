@@ -10,7 +10,7 @@ const RSVP = () => {
   const [going, setGoing] = useState([]);
   const [showrsvp, setShowrsvp] = useState(false);
 
-  const apiURL = "http://localhost:8080";
+  const apiURL = "";
   // production || ''
   //local || 'http://localhost:8080'
 
