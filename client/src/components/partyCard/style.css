@@ -1,10 +1,41 @@
+@font-face {
+    font-family: "sharpie";
+    src: local("DenBasuky-X3v7j"),
+      url("../../assets/fonts/DenBasuky-X3v7j.ttf") format("truetype");
+  }
+
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white; 
+    padding: 16px;
+    margin: 12px;
+    max-width: 554px;
 }
 
 .cardStock {
-    width: 128px;
-    height: 128px;
+    max-width: 100%;
+    max-height: 640px;
+}
+
+.name {
+    text-align: center;
+    font-family: "sharpie";
+    font-size: 48px;
+    margin: 0px;
+}
+
+.title {
+    text-align: center;
+    margin: 0px 0 0px;
+    padding-bottom: 8px;
+    border-bottom: 1px black solid ;
+    width: 100%;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.description {
+    max-width: 100%;
 }

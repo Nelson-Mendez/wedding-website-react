@@ -1,9 +1,54 @@
 .home {
 	padding: 2rem 20px;
 	min-height: 100%;
-	width: 100%;
+	max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(256,256,256,0.6);
+    text-align: center
 }
 
 .home h1 {
 	color: black;
+}
+
+.date {
+    margin: 4px;
+}
+
+.location {
+    margin: 6px 0 12px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+.photoImage {
+max-height: 40vh;
+}
+
+.carousel .slide img {
+    width: auto !important;
+}
+.carousel .thumbs {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .thumbs-wrapper {
+    margin-bottom: 4px !important;
+}
+
+.carousel-root {
+    outline: none;
+    width: 80%;
 }

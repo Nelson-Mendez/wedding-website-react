@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "cursiveHeader";
+    src: local("BetterGrade-519DV"),
+      url("../../assets/fonts/BetterGrade-519DV.ttf") format("truetype");
+  }
+
 .header {
 	display: flex;
 	flex-direction: column;
@@ -7,13 +13,21 @@
 	/* height: 56px; */
 	padding: 0;
 	background: white;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 	z-index: 50;
+    background-image: url(../../assets/pictures/purpleFlowersEdit.png);
+    background-repeat: no-repeat;
+    background-size: cover
 }
+
 
 .header .socials {
 	padding: 0 0.5rem;
 	color: black;
+}
+
+.header .titleThing {
+    margin: 8px;
 }
 
 .header h1 {
@@ -21,10 +35,29 @@
 	margin: 0;
 	padding: 0 15px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 116px;
 	line-height: 56px;
 	font-weight: 400;
+    margin: 24px auto;
 	color: #000;
+    font-family: cursiveHeader, 'Arial Narrow Bold', sans-serif;
+}
+
+.homeText{
+    display: flex;
+    flex-direction: column;
+align-items: center;    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav > p {
+    margin: auto 12px;
 }
 
 .header nav {
@@ -39,15 +72,23 @@
 	padding: 0 15px;
 	min-width: 50px;
 	text-align: center;
-	background: purple;
+	background: rgb(171, 159, 220);
 	text-decoration: none;
 	color: white;
 	will-change: background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation {
+    display:flex;
+    flex-direction: row;
 }
 
 .header nav a:hover,
 .header nav a:active {
-	background: rgba(128,0,128,0.2);
+	background: rgba(171,159,220,0.8);
 }
 
 .header nav a.active {

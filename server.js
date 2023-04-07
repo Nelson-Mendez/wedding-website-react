@@ -27,8 +27,7 @@ const db = mysql.createConnection({
 });
 */
 
-//mysql.createConnection(process.env.JAWSDB_URL);
-
+//const db = mysql.createConnection(process.env.JAWSDB_URL);
 const db = mysql.createConnection({
     host     : 'iu51mf0q32fkhfpl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     user     : 'mpzlghpo5gsqloaf',
@@ -36,7 +35,6 @@ const db = mysql.createConnection({
     password : 'qhe88w4b15px5rsf',
     database : 'zh1c5hfnlgc6cvfj'
 });
-
 
 db.connect( function(err) {
     if (err) throw err
@@ -98,7 +96,7 @@ app.put('/api/rsvp/submit', (req, res) => {
     
     req.body.forEach(object => {
         const { name, RSVP, dietary, songRequest } = object
-        let rsvpStatus = RSVP ? 1 : 0
+        let rsvpStatus = RSVP ? RSVP : "Did not answer"
         console.log(name, RSVP, rsvpStatus, dietary, songRequest)
         db.query(
             `UPDATE guestlist

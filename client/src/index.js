@@ -6,10 +6,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/home'
 import Header from  './components/header'
 import Details from './routes/details'
-import Registry from './routes/registry'
 import RSVP from './routes/rsvp'
 import TravelAccomodation from './routes/travelAccomodation'
 import WeddingParty from './routes/weddingParty'
+import Faq from './routes/faq';
 
 const router = createBrowserRouter([
     {
@@ -19,10 +19,6 @@ const router = createBrowserRouter([
     {
         path: "/details",
         element: <Details />
-    },
-    {
-        path: "/registry",
-        element: <Registry />
     },
     {
         path: "/rsvp",
@@ -35,7 +31,11 @@ const router = createBrowserRouter([
     {
         path: "/weddingParty",
         element: <WeddingParty />
-    },
+    },    
+    {
+        path: "/faq",
+        element: <Faq />
+    }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
