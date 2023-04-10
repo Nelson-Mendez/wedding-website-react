@@ -9,6 +9,7 @@ const RSVP = () => {
   const [songRequest, setSongRequest] = useState([]);
   const [going, setGoing] = useState([]);
   const [showrsvp, setShowrsvp] = useState(false);
+  const [showThanks, setShowThanks] = useState(false);
 
   const apiURL = "";
   // production || ''
@@ -78,7 +79,6 @@ const RSVP = () => {
     console.log(e.target);
     e.preventDefault();
     sendRSVP();
-    alert("submitted!");
   };
 
   const sendRSVP = async () => {
@@ -113,6 +113,11 @@ const RSVP = () => {
         "kurwa mać coś poszło nie tak! Contact Nelson at 647-704-4269 or Jane at 647-858-5774"
       );
     }
+
+    if (response.status === 200) {
+        setShowThanks(true);
+        setShowrsvp(false);
+    }
   };
 
   return (
@@ -120,7 +125,7 @@ const RSVP = () => {
       <h1>RSVP</h1>
       <p>
         Join us for this special occasion! Please RSVP by completing this form
-        by April 20th 2023. Thank you!
+        by June 20th 2023. Thank you!
       </p>
       <div>
         {rsvpGroup.length ? null : (
@@ -193,6 +198,13 @@ const RSVP = () => {
             ))}
             <button className="action-button">Submit</button>
           </form>
+        )}
+
+        {showThanks && (<div className="thankYou">
+            <h3>Thanks for your response!</h3>
+            <p>If you have any questions or concerns, please give us a call at either 647-704-4269 (Nelson) or 647-858-5774 (Jane) and we'll help as best we can!</p>
+            <p>If you've made a mistake, or would like to update your RSVP, just refresh the page and search for your name again, and you can make any changes you need!</p>
+            </div>
         )}
       </div>
     </div>

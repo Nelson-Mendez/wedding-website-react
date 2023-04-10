@@ -18,7 +18,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Home = () => (
   <div className="home">
-    <Carousel autoPlay="true" infiniteLoop="true">
+    <Carousel autoPlay={true} infiniteLoop={true} showArrows={false} showThumbs={false} showIndicators={true} showStatus={false} >
       <img alt="" className="photoImage" src={IMG_7822}></img>
       <img alt="" className="photoImage" src={IMG_7663}></img>
       <img alt="" className="photoImage" src={IMG_8082}></img>
@@ -83,11 +83,12 @@ const Home = () => (
         and Louise, Nelson and Jane planned a trip to Niagara on the Lake to
         celebrate their 10 year anniversary. After much bamboozlement and making
         it very clear he would not be proposing that weekend, Nelson pulled the
-        old whats-that-over-trick and got on one knee and asked Jane to marry
-        him.
+        old whats-that-over-trick and got down on one knee and asked Jane to marry
+        him. It was a resounding yes! 
         
-        <br></br><br></br> You are all very meaningful people in our lives and we cannot wait
-        to share this very special day with you all!
+        <br></br><br></br> They are so excited to begin this next chapter of their love story with everyone
+        they hold near and dear to them.
+
       </p>
     </div>
   </div>

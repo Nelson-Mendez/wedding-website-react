@@ -111,6 +111,7 @@ app.put('/api/rsvp/submit', (req, res) => {
         )
         
     });
+    res.sendStatus(200)
 })
 
 app.listen(PORT, () => {
