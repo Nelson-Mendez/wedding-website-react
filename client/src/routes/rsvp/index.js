@@ -33,7 +33,7 @@ const RSVP = () => {
 
     if (response.status === 404) {
       alert(
-        "Person not found! Make sure name is written correctly, or contact Nelson at 647-704-4269 or Jane at 647-858-5774"
+        "Something went wrong! Please make sure the name is spelled the same as on your invitation, or contact Nelson at 647-704-4269 or Jane at 647-858-5774"
       );
     }
 
@@ -110,7 +110,7 @@ const RSVP = () => {
 
     if (response.status === 404) {
       alert(
-        "kurwa mać coś poszło nie tak! Contact Nelson at 647-704-4269 or Jane at 647-858-5774"
+        "Something went wrong! Please contact Nelson at 647-704-4269 or Jane at 647-858-5774"
       );
     }
 
