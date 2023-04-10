@@ -83,7 +83,7 @@ const Home = () => (
         and Louise, Nelson and Jane planned a trip to Niagara on the Lake to
         celebrate their 10 year anniversary. After much bamboozlement and making
         it very clear he would not be proposing that weekend, Nelson pulled the
-        old whats-that-over-trick and got down on one knee and asked Jane to marry
+        old whats-that-over-there-trick and got down on one knee and asked Jane to marry
         him. It was a resounding yes! 
         
         <br></br><br></br> They are so excited to begin this next chapter of their love story with everyone
