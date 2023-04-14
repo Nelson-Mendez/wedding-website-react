@@ -100,7 +100,7 @@ export const data = [
     name: "Michael Janek",
     title: "Groomsman",
     image: mike,
-    description: "Second oldest of the Cousins, and older brother to David. Mike and Nelson are both food connoisseurs, enjopy being active and participating in events such as Tough Mudder together. Mike is always ready to try and do new things, and usually with more excitement and enthusiasm than the person who suggested the activity in the first place.",
+    description: "Second oldest of the Cousins, and older brother to David. Mike and Nelson are both food connoisseurs, enjoy being active and participating in events such as Tough Mudder together. Mike is always ready to try and do new things, and usually with more excitement and enthusiasm than the person who suggested the activity in the first place.",
   },
   {
     id: 10,
