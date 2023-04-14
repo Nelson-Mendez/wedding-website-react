@@ -90,7 +90,7 @@ export const data = [
   },
   {
     id: 11,
-    name: "Paul Grochochinski",
+    name: "Paul Grochocinski",
     title: "Groomsman",
     image: paul,
     description: "Paul is not only a member of the cousin crew but he's also one of Nelson's best friends. Paul and Nelson love all things technology and can often be found playing video games (they especially love anything VR!) and board games. Paul is always thinking of the future and how to make everday things better. ",
