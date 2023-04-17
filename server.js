@@ -45,7 +45,7 @@ db.connect( function(err) {
 app.post('/api/rsvp/list', (req, res)=> {
     const { name } = req.body
     db.query(
-        `select groupNumber from guestlist where name = '${name}'`,
+        `select groupNumber from guestlist where name = "${name}"`,
         (error, results) => {
             if (error) { res.send(error), console.log(error)}
             if (results[0]) {
@@ -55,7 +55,7 @@ app.post('/api/rsvp/list', (req, res)=> {
                     
                 if (groupNumber === 0) {
                     db.query(
-                        `select * from guestlist where name = '${name}'`,
+                        `select * from guestlist where name = "${name}"`,
                         function(error, results) {
                             if (error) throw error;
                             else {
@@ -100,8 +100,8 @@ app.put('/api/rsvp/submit', (req, res) => {
         console.log(name, RSVP, rsvpStatus, dietary, songRequest)
         db.query(
             `UPDATE guestlist
-            SET RSVP = '${rsvpStatus}', dietary = '${dietary}', songRequest = '${songRequest}'
-            WHERE name = '${name}';`,
+            SET RSVP = "${rsvpStatus}", dietary = "${dietary}", songRequest = "${songRequest}"
+            WHERE name = "${name}";`,
             function(error, results) {
                 if (error) throw error;
                 else {
