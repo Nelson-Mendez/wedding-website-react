@@ -97,7 +97,7 @@ export const data = [
   },
   {
     id: 9,
-    name: "Michael Janek",
+    name: "Mike Janek",
     title: "Groomsman",
     image: mike,
     description: "Second oldest of the Cousins, and older brother to David. Mike and Nelson are both food connoisseurs, enjoy being active and participating in events such as Tough Mudder together. Mike is always ready to try and do new things, and usually with more excitement and enthusiasm than the person who suggested the activity in the first place.",
@@ -111,7 +111,7 @@ export const data = [
   },
   {
     id: 12,
-    name: "Martin Kusznierz",
+    name: "Martin Kusnierz",
     title: "Groomsman",
     image: martin,
     description: "The eldest of the Cousins, Martin is always down for a good time, and happy to open his home to the rest of the family. There were many times where a single message would have the whole crew driving down to his place to hang out for the weekend. Nelson and Martin are always down for a good game of Smash Bros. Martin is always smiling and laughing, and able to make everyone else in the room smile and laugh with him.",
