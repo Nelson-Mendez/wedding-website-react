@@ -44,6 +44,7 @@ db.connect( function(err) {
 
 app.post('/api/rsvp/list', (req, res)=> {
     const { name } = req.body
+    console.log(name)
     db.query(
         `select groupNumber from guestlist where name = "${name}"`,
         (error, results) => {
