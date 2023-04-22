@@ -33,7 +33,7 @@ const RSVP = () => {
 
     if (response.status === 404) {
       alert(
-        "Something went wrong! Please make sure the name is spelled the same as on your invitation, or contact Nelson at 647-704-4269 or Jane at 647-858-5774"
+        "Something went wrong! Please make sure to include your first and last name, and that the name is spelled the same as on your invitation, or contact Nelson at 647-704-4269 or Jane at 647-858-5774"
       );
     }
 
@@ -124,8 +124,8 @@ const RSVP = () => {
     <div className="rsvp">
       <h1>RSVP</h1>
       <p>
-        Join us for this special occasion! Please RSVP by completing this form
-        by June 20th 2023. Thank you!
+        Join us for this special occasion! To RSVP, please enter the first and last name of one of your party below. </p> 
+        <p>Please RSVP by June 20th 2023. Thank you!
       </p>
       <div>
         {rsvpGroup.length ? null : (
